@@ -9,7 +9,7 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
       { status: 'Fulfilled', value: val[1] },
     ],
     (err) => [
-      { status: 'Fulfilled', value: err[0] },
-      { status: 'Fulfilled', value: err[1] },
+      { status: 'Rejected', value: err[0] },
+      { status: 'Rejected', value: err[1] },
     ]);
 }
