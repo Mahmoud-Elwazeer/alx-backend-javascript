@@ -8,7 +8,7 @@ export default async function handleProfileSignup() {
         console.log(`${value[0].body}`, `${value[1].firstName}`, `${value[1].lastName}`);
       },
       () => {
-        console.log('Signup system offline');
+        console.error('Signup system offline');
       },
     );
 }
