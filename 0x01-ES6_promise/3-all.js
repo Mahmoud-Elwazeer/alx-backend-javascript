@@ -1,14 +1,14 @@
-import { uploadPhoto, createUser } from './utils'
+import { uploadPhoto, createUser } from './utils';
 
 export default function handleProfileSignup() {
-  photo = uploadPhoto();
+  const photo = uploadPhoto();
   photo.then((result) => {
-    body = result.body;
-    user = createUser();
+    const body = result.body;
+    const user = createUser();
     user.then((result) => {
-      firstname = result.firstName
-      lastname = result.lastName
-      console.log(body, firstname, lastname)
+      const firstname = result.firstName;
+      const lastname = result.lastName;
+      console.log(body, firstname, lastname);
     });
   });
 }
