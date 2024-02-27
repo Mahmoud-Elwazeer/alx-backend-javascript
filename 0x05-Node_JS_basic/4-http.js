@@ -11,9 +11,11 @@ app.on('request', (_, res) => {
   res.setHeader('Content-Length', responseText.length);
   res.statusCode = 200;
 
-  res.write(responseText);
+  res.write(Buffer.from(responseText));
 });
 
 app.listen(port, hostname, () => {
   process.stdout.write(`Server running at http://${hostname}:${port}/\n`);
 });
+
+module.exports = app
