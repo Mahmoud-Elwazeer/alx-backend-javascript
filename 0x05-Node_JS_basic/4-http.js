@@ -16,4 +16,4 @@ app.on('request', (_, res) => {
 
 app.listen(port, hostname);
 
-module.exports = app
+module.exports = app;
