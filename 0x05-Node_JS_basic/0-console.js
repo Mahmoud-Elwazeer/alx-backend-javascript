@@ -1,3 +1,3 @@
-exports.displayMessage = function (msg) {
+module.exports = function displayMessage(msg) {
   console.log(msg);
 };
