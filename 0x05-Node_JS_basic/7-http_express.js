@@ -1,5 +1,5 @@
 const express = require('express');
-const fs = require('fs')
+const fs = require('fs');
 
 const app = express();
 const port = 1245;
@@ -62,7 +62,7 @@ app.get('/students', (_, res) => {
 
       res.send(responseText);
     });
-})
+});
 
 app.listen(port);
 
