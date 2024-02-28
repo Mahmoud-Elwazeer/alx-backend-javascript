@@ -2,7 +2,7 @@ const fs = require('fs');
 const { parse } = require('csv-parse');
 
 module.exports = function countStudents(file) {
-  return new Promise((res) => {
+  return new Promise((res, rej) => {
     let listCS = [];
     let listSWE = [];
     let count = 0;
@@ -29,7 +29,7 @@ module.exports = function countStudents(file) {
         res();
       })
       .on('error', () => {
-        throw new Error('Cannot load the database');
+        rej(new Error('Cannot load the database'));
       });
   });
 };
