@@ -25,7 +25,7 @@ module.exports = function countStudents(file) {
 
     console.log(`Number of students: ${count}`);
     console.log(`Number of students in CS: ${nCS}. List: ${listCS}`);
-    console.log(`Number of students in CS: ${nSWE}. List: ${listSWE}`);
+    console.log(`Number of students in SWE: ${nSWE}. List: ${listSWE}`);
   } catch (error) {
     throw new Error('Cannot load the database');
   }
