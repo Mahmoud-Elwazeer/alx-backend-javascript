@@ -1,0 +1,22 @@
+{
+  "name": "alx-backend-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/Mahmoud-Elwazeer/alx-backend-javascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mahmoud-Elwazeer/alx-backend-javascript/issues"
+  },
+  "homepage": "https://github.com/Mahmoud-Elwazeer/alx-backend-javascript#readme",
+  "devDependencies": {
+    "mocha": "^10.3.0"
+  }
+}
