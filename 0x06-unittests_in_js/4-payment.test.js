@@ -18,7 +18,7 @@ describe('sendPaymentRequestToApi', () => {
       expect(spy.log.calledWith('The total is: 10')).to.be.true;
       expect(spy.log.callCount).to.be.equal(1);
 
-      spy.restore();
-      stub.log.restore();
+      stub.restore();
+      spy.log.restore();
     });
 });
