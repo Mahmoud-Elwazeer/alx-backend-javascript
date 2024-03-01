@@ -52,8 +52,8 @@ describe('Express Server', () => {
     });
   });
 
-  it('spost data', (done) => {
-    request.get(`http://localhost:${port}/login`,  {json: {userName: 'Elwazeer'}}, (err, res, body) => {
+  it('post data', (done) => {
+    request.post(`http://localhost:${port}/login`,  {json: {userName: 'Elwazeer'}}, (err, res, body) => {
       if (err) {
         return done(err);
       }
