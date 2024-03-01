@@ -5,7 +5,9 @@ const getPaymentTokenFromAPI = './6-payment_token.js';
 
 describe(('getPaymentTokenFromAPI', () => {
   it('Async tests with done', () => {
-    expect(true).to.equal({data: 'Successful response from the API' });
-    done();
+    return getPaymentTokenFromAPI(true)
+      .then((res) => {
+        expect(true).to.deep.equal({data: 'Successful response from the API' });
+      });
   });
 }));
