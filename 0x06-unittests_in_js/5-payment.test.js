@@ -1,5 +1,4 @@
 const sendPaymentRequestToApi = require('./3-payment.js');
-const Utils = require('./utils.js');
 const chai = require("chai");
 const expect = chai.expect;
 const sinon = require("sinon");
@@ -8,7 +7,9 @@ describe('sendPaymentRequestToApi', () => {
     let spy;
 
     beforeEach(() => {
-      spy = sinon.spy(console);
+      if (!spy) {
+        spy = sinon.spy(console);
+      }
     })
 
     afterEach(() => {
