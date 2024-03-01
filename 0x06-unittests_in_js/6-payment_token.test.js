@@ -4,10 +4,11 @@ chai.use(require("chai-as-promised"));
 const getPaymentTokenFromAPI = './6-payment_token.js';
 
 describe(('getPaymentTokenFromAPI', () => {
-  it('Async tests with done', () => {
+  it('Async tests with done', (done) => {
     return getPaymentTokenFromAPI(true)
       .then((res) => {
         expect(true).to.deep.equal({data: 'Successful response from the API' });
+        done()
       });
   });
 }));
