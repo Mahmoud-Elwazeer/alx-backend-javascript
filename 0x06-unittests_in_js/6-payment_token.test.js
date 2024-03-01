@@ -7,7 +7,7 @@ describe(('getPaymentTokenFromAPI', () => {
   it('Async tests with done', (done) => {
     return getPaymentTokenFromAPI(true)
       .then((res) => {
-        expect(true).to.deep.equal({data: 'Successful response from the API' });
+        expect(res).to.deep.equal({data: 'Successful response from the API' });
         done();
       });
   });
