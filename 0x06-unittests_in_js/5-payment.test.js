@@ -12,7 +12,7 @@ describe('sendPaymentRequestToApi', () => {
     })
 
     afterEach(() => {
-      spy.restore()
+      spy.log.restore()
     })
     it('sendPaymentRequestToAPI with 100, and 20', () => {
 
